@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <AnimationCssTrain/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// локально імпортую компонент PlayerCharacter (тільки до App.vue)
+//import StatsView from "@/components/StatsView.vue";
+import AnimationCssTrain from "@/components/AnimationCssTrain.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    AnimationCssTrain,
+  },
+
+  data() {
+    return {
+
+    }
+  },
+
+  
 }
 </script>
 
